@@ -1,7 +1,7 @@
 # MechaCar Statistical Analysis
 
 ## Linear Regression to Predict MPG
-Summary Statistics from Linear Model of MPG Prediction of MechaCar Prototypes  [images/MechaCarSummaryStats.png]
+Summary Statistics from Linear Model of MPG Prediction of MechaCar Prototypes  [https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/ce20b23983b91720ff674b8bcc6649ea15defe71/images/MechaCarSummaryStats.png]
 
 From this screen shot of our RStudio/RScript analysis, we can see that our linear regression model gives the r-squared value of 0.7149, which means that roughly 72% of all MPG
 predictions will be correct when using this linear model. In addition, the p-value of our linear regression analysis is 5.35 x e-11, which is much smaller than our assumed
