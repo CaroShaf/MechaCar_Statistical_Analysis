@@ -12,3 +12,5 @@ ground clearance and vehicle length (as well as intercept) are statistically unl
 clearance and vehicle length have a significant impact on MPG.
 
 All of these factors together provide a reasonably effective linear model, though one that could possibly be improved.
+
+## Summary Statistics on Suspension Coils
