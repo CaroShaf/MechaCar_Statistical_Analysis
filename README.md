@@ -14,3 +14,7 @@ clearance and vehicle length have a significant impact on MPG.
 All of these factors together provide a reasonably effective linear model, though one that could possibly be improved.
 
 ## Summary Statistics on Suspension Coils
+
+## T-Tests on Suspension Coils
+
+## Study Design: MechaCar vs Competition
