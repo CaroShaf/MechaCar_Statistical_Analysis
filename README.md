@@ -14,14 +14,31 @@ clearance and vehicle length have a significant impact on MPG.
 All of these factors together provide a reasonably effective linear model, though one that could possibly be improved.
 
 ## Summary Statistics on Suspension Coils
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+briefly detail and interpret the suspension coil summary statistics.
+
+write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+Total Summary https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/total%20summary.png
+Lot Summary https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot%20summary.png
+
 
 ## T-Tests on Suspension Coils
+summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+There is a summary of the t-test results across all manufacturing lots and for each lot
+
+Lot 1 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot1%20t-test.png
+Lot 2 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot2%20t-test.png
+Lot 3 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot3%20t-test.png
 
 ## Study Design: MechaCar vs Competition
 
-In designing a study of performance of the MechaCar vs Competition, we could look at MotorTrend, which is a highly coveted annually awards the "Car of the Year" to the cream of
-the crop. For 2021 models, they selected from a field that included, on the "low end," a $21K Nissan all the way up to a $200K Porsche by normalizing their evaluations based on
+In designing a study of performance of the MechaCar vs Competition, we could look at MotorTrend, a highly coveted annual award which goes to the cream of the crop, "Car of the
+Year." For 2021 models, they selected from a field that included, on the "low end," a $21K Nissan all the way up to a $200K Porsche by normalizing their evaluations based on
 the vehicle's own merits, as judged subjectively and via instrument tests, by six specific criteria.  These criteria are:
+
 1.) Advancement in Design
 2.) Engineering Excellence
 3.) Efficiency
@@ -30,8 +47,10 @@ the vehicle's own merits, as judged subjectively and via instrument tests, by si
 6.) Performance of Intended Function
 
 While this method results in a very competitive and comprehensive annual review of all cars to award the "Car of the Year," for our purposes, it may be more appropriate to base
-our study on instrument tests and not as much on subjective measures as aesthetics and predicted retained value.  While such factors very much play into a consumer's preferences
-and decisions to purchase, we can more readily obtain data such as those compared between vehicles in a similar class of the MechaCar on factors, as suggested in Consumer Reports, such as:
+our study on instrument tests and not as much on subjective measures as aesthetics and predicted retained value and also limiting to vehicles in an equivalent class as the
+MechaCar. (The competition must first be identified.)  While such factors very much play into a consumer's preferences and decisions to purchase, we can more readily obtain data
+such as those compared between vehicles in a similar class of the MechaCar on factors, as suggested in Consumer Reports or Edmunds, such as:
+
 1.) Base MRSP range
 2.) MPG a.) overall, b.) city and c.) highway
 3.) Performance-acceleration a.) 0 to 30mph (time) b.) 0 to 60mph (time) c.) 45-65 mph d.) quarter-mile (time, speed)
@@ -40,7 +59,16 @@ and decisions to purchase, we can more readily obtain data such as those compare
 6.) Safety features-crash ratings
 7.) Ride comfort-a.)suspension coils b.) seat comfort/leg room/head room, etc.
 
-A one-way ANOVA is used to test the means of a single dependent variable across a single independent variable with multiple groups. (e.g., fuel efficiency of different cars based on vehicle class).
-A two-way ANOVA does the same thing, but for two different independent variables (e.g., vehicle braking distance based on weather conditions and transmission type).
+Even Consumer Reports, however, covers a lot of subjective ground.  Many of the above mentioned categories for which instrument-derived data is recommended can be fleshed out
+with qualitative data from road tests, such as driving experiences that could include smoothness of shifting, engine noise and suspension performance on varying road or
+emergency conditions. Ordinal or nominal categorical data could most certainly be collected in subjective areas and analyzed comparatively by examining third-party ratings (such
+as Consumer Reports) in contingency tables through a chi-squared test for each competitor and the MechaCar itself.  In fact, Consumer Reports is a good example of how overall
+scores for vehicles are calculated and compared, most likely using similar analysis on both subjective and instrument-derived data.
+
+For categorical data (such as ranges of speeds, or type of MPG that can be obtained for factors represented in the list above, a one-way ANOVA can be used to test the means of a 
+single dependent variable across a single independent variable with multiple groups. (e.g., fuel efficiency of different cars based on vehicle class, or breaking and 
+acceleration times of different cars in competitively classed vehicles).  A two-way ANOVA can do the same thing, but for two different independent variables (e.g., vehicle 
+braking distance based on weather conditions and transmission type, again in the same vehicle class).
+
 
 
