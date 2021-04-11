@@ -19,21 +19,24 @@ Total Summary graphic below, the current manufacturing data does meet this desig
 in, far less than 100 lbs/sq in. 
 Total Summary https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/total%20summary.png
 
-However, each lot individually tells a different story, as can be seen in the Lot Summary table below.  Lot 1 has <1 lbs/sq in and Lot 2 has <7.5 lbs/sq in, both of which are 
-far less than 100 lbs/sq in.  But in Lot 3, the variance is approximately 170.3 lbs/sq in, which is far greater than the maximum 100 lbs/sq in.  All suspension coils from Lot3 
-should be replaced immediately and measurements repeated with new suspension coils in the cars that have replaced suspension coils.
+However, each lot individually tells a different story, as can be seen in the Lot Summary table below.  Lot 1 has <1 PSI and Lot 2 has <7.5 PSI, both of which are 
+far less than 100 PSI.  But in Lot 3, the variance is approximately 170.3 PSI, which is far greater than the maximum 100 PSI.  All suspension coils from Lot3 
+should be replaced immediately and measurements repeated with new suspension coils in the cars that have replaced suspension coils.  This is also borne out by examining the t
+tests for the total manufacturing lots and the individual lots, as seen in the next section.
 Lot Summary https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot%20summary.png
 
 
 ## T-Tests on Suspension Coils
-summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
-There is a summary of the t-test results across all manufacturing lots and for each lot
+Across the total manufacturing lots, the Total T-test, below, shows that p=.06028 is not less than the signficance value of .05.  Therefore, as a total manufacturing lot, the null hypothesis cannot be rejected and thus the total manufacturing lot together is statistically similar to the population mean of 1500 PSI.
+Total T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/d720b695ba194c6bf2e1a88bdca0023b005e7001/images/total%20lots%20t-test.png
 
+As can be seen in the three tables below, for Lot 1 and Lot 2, the p-value is 1 and .61, respectively, neither of which is less than the .05 significance value, and thus very 
+much statistically similar to the population mean of 1500 PSI.  However, Lot 3's p-value is .042 which is less than the .05 significance value and thus statistically dissimilar
+and the null hypothesis is rejected such that there appears to be a random factor contributing to the difference in Lot 3's mean to the population's mean.  As was noted above in
+the summary statistics, the Lot 3 variance was far greater than the maximum of 100 PSI.  Lot 3 should be considered defective.
 Lot 1 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot1%20t-test.png
 Lot 2 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot2%20t-test.png
 Lot 3 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot3%20t-test.png
-
- the p-value is greater than 0.05, the data is considered normally distributed.
 
 ## Study Design: MechaCar vs Competition
 
@@ -49,7 +52,7 @@ the vehicle's own merits, as judged subjectively and via instrument tests, by si
 6.) Performance of Intended Function
 
 While this method results in a very competitive and comprehensive annual review of all cars to award the "Car of the Year," for our purposes, it may be more appropriate to base
-our study on instrument tests and not as much on subjective measures as aesthetics and predicted retained value and also limiting to vehicles in an equivalent class as the
+our study on instrument tests and not as much on subjective measures as aesthetics and predicted retained value and also limiting to vehicles to an equivalent class as the
 MechaCar. (The competition must first be identified.)  While such factors very much play into a consumer's preferences and decisions to purchase, we can more readily obtain data
 such as those compared between vehicles in a similar class of the MechaCar on factors, as suggested in Consumer Reports or Edmunds, such as:
 
@@ -64,17 +67,20 @@ such as those compared between vehicles in a similar class of the MechaCar on fa
 Even Consumer Reports, however, covers a lot of subjective ground.  Many of the above mentioned categories for which instrument-derived data is recommended can be fleshed out
 with qualitative data from road tests, such as driving experiences that could include smoothness of shifting, engine noise and suspension performance on varying road or
 emergency conditions. Ordinal or nominal categorical data could most certainly be collected in subjective areas and analyzed comparatively by examining third-party ratings (such
-as Consumer Reports) in contingency tables through a chi-squared test for each competitor and the MechaCar itself.  In fact, Consumer Reports is a good example of how overall
-scores for vehicles are calculated and compared, most likely using similar analysis on both subjective and instrument-derived data.
+as Consumer Reports, Edmunds, KBB, JD Power, etc.) in contingency tables through a chi-squared test for each competitor and the MechaCar itself.  In fact, Consumer Reports is a
+good example of how overall scores for vehicles are calculated and compared, most likely using similar analysis on both subjective and instrument-derived data.
 
-For categorical data (such as ranges of speeds, or type of driving to determine MPG) that can be obtained for factors represented in the list above, a one-way ANOVA can be used
-to test the means of a single dependent variable across a single independent variable with multiple groups. (e.g., fuel efficiency of different cars based on vehicle class, or
-breaking and acceleration times of different cars in competitively classed vehicles).  A two-way ANOVA can do the same thing, but for two different independent variables (e.g., 
-vehicle braking distance based on weather conditions and transmission type, again in the same vehicle class).
+For categorical data (acceleration times in speed "buckets," or type of driving to determine MPG) that can be obtained for factors represented in the list above, a one-way ANOVA 
+can be used to test the means of a single dependent variable across a single independent variable with multiple groups. (e.g., fuel efficiency of different cars based on vehicle 
+class, or breaking and acceleration times of different cars in competitively classed vehicles).  A two-way ANOVA can do the same thing, but for two different independent 
+variables (e.g., vehicle braking distance based on weather conditions and transmission type, again in the same vehicle class).
 
 Additionally, using one performance factor, such as 0-60 mph acceleration times, viewed against fuel economy, plotted for like drive trains and like displacement, would be a
 great way to visually compare performance of the MechaCar against its competitors, and could be easily completed in ggplot2 with the relevant data.  A linear regression could be
 performed on the same data set with the drive train and displacement being a dependent variable.
+
+Some of this data is available or obtained through third-party sources, such as the EPA (for emissions) or NHTSA (for crash ratings). R and its associated libraries can complete 
+a robust statistical analysis and visualization of this future study.
 
 
 
