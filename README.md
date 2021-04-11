@@ -79,8 +79,9 @@ Additionally, using one performance factor, such as 0-60 mph acceleration times,
 great way to visually compare performance of the MechaCar against its competitors, and could be easily completed in ggplot2 with the relevant data.  A linear regression could be
 performed on the same data set with the drive train and displacement being a dependent variable.
 
-Some of this data is available or obtained through third-party sources, such as the EPA (for emissions) or NHTSA (for crash ratings). R and its associated libraries can complete 
-a robust statistical analysis and visualization of this future study.
+Some of this data is available or obtained through third-party sources, such as the EPA (for emissions) or NHTSA (for crash ratings). It is important to have a through
+assessment of the data required as inputs in order to get the comparative performance outputs that are desired.  R and its associated libraries can complete 
+a robust statistical analysis and visualization of this future study provided with appropriate datasets.
 
 
 
