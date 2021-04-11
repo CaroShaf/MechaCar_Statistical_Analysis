@@ -7,23 +7,21 @@ From this screen shot of our RStudio/RScript analysis, we can see that our linea
 predictions will be correct when using this linear model. In addition, the p-value of our linear regression analysis is 5.35 x e-11, which is much smaller than our assumed
 significance level of 0.05%. Therefore, we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
 
-In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our results,
-ground clearance and vehicle length (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model. In other words the ground
-clearance and vehicle length have a significant impact on MPG.
+In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our 
+results, ground clearance and vehicle length (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model. In other words the 
+ground clearance and vehicle length have a significant impact on MPG.
 
-All of these factors together provide a reasonably effective linear model, though one that could possibly be improved.
+All of these factors together provide a reasonably effective linear model, though one that could possibly be improved by considering other variables's non-random impact on MPG.
 
 ## Summary Statistics on Suspension Coils
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-briefly detail and interpret the suspension coil summary statistics.
-
- the p-value is greater than 0.05, the data is considered normally distributed.
-
-write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
-
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. As can be seen in the
+Total Summary graphic below, the current manufacturing data does meet this design specification for all manufacturing lots in total, as the variance is approximately 62.3 lbs/sq 
+in, far less than 100 lbs/sq in. 
 Total Summary https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/total%20summary.png
+
+However, each lot individually tells a different story, as can be seen in the Lot Summary table below.  Lot 1 has <1 lbs/sq in and Lot 2 has <7.5 lbs/sq in, both of which are 
+far less than 100 lbs/sq in.  But in Lot 3, the variance is approximately 170.3 lbs/sq in, which is far greater than the maximum 100 lbs/sq in.  All suspension coils from Lot3 
+should be replaced immediately and measurements repeated with new suspension coils in the cars that have replaced suspension coils.
 Lot Summary https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot%20summary.png
 
 
