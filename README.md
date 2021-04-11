@@ -17,6 +17,8 @@ All of these factors together provide a reasonably effective linear model, thoug
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 briefly detail and interpret the suspension coil summary statistics.
 
+ the p-value is greater than 0.05, the data is considered normally distributed.
+
 write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
@@ -32,6 +34,8 @@ There is a summary of the t-test results across all manufacturing lots and for e
 Lot 1 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot1%20t-test.png
 Lot 2 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot2%20t-test.png
 Lot 3 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot3%20t-test.png
+
+ the p-value is greater than 0.05, the data is considered normally distributed.
 
 ## Study Design: MechaCar vs Competition
 
