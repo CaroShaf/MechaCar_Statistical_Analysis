@@ -18,3 +18,29 @@ All of these factors together provide a reasonably effective linear model, thoug
 ## T-Tests on Suspension Coils
 
 ## Study Design: MechaCar vs Competition
+
+In designing a study of performance of the MechaCar vs Competition, we could look at MotorTrend, which is a highly coveted annually awards the "Car of the Year" to the cream of
+the crop. For 2021 models, they selected from a field that included, on the "low end," a $21K Nissan all the way up to a $200K Porsche by normalizing their evaluations based on
+the vehicle's own merits, as judged subjectively and via instrument tests, by six specific criteria.  These criteria are:
+1.) Advancement in Design
+2.) Engineering Excellence
+3.) Efficiency
+4.) Safety
+5.) Value
+6.) Performance of Intended Function
+
+While this method results in a very competitive and comprehensive annual review of all cars to award the "Car of the Year," for our purposes, it may be more appropriate to base
+our study on instrument tests and not as much on subjective measures as aesthetics and predicted retained value.  While such factors very much play into a consumer's preferences
+and decisions to purchase, we can more readily obtain data such as those compared between vehicles in a similar class of the MechaCar on factors, as suggested in Consumer Reports, such as:
+1.) Base MRSP range
+2.) MPG a.) overall, b.) city and c.) highway
+3.) Performance-acceleration a.) 0 to 30mph (time) b.) 0 to 60mph (time) c.) 45-65 mph d.) quarter-mile (time, speed)
+4.) Performance-breaking a.) from 60 mph dry b.) from 60 mph wet
+5.) Safety features-check for AEB, etc.
+6.) Safety features-crash ratings
+7.) Ride comfort-a.)suspension coils b.) seat comfort/leg room/head room, etc.
+
+A one-way ANOVA is used to test the means of a single dependent variable across a single independent variable with multiple groups. (e.g., fuel efficiency of different cars based on vehicle class).
+A two-way ANOVA does the same thing, but for two different independent variables (e.g., vehicle braking distance based on weather conditions and transmission type).
+
+
