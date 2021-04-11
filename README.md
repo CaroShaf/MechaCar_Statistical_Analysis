@@ -65,10 +65,14 @@ emergency conditions. Ordinal or nominal categorical data could most certainly b
 as Consumer Reports) in contingency tables through a chi-squared test for each competitor and the MechaCar itself.  In fact, Consumer Reports is a good example of how overall
 scores for vehicles are calculated and compared, most likely using similar analysis on both subjective and instrument-derived data.
 
-For categorical data (such as ranges of speeds, or type of MPG that can be obtained for factors represented in the list above, a one-way ANOVA can be used to test the means of a 
-single dependent variable across a single independent variable with multiple groups. (e.g., fuel efficiency of different cars based on vehicle class, or breaking and 
-acceleration times of different cars in competitively classed vehicles).  A two-way ANOVA can do the same thing, but for two different independent variables (e.g., vehicle 
-braking distance based on weather conditions and transmission type, again in the same vehicle class).
+For categorical data (such as ranges of speeds, or type of driving to determine MPG) that can be obtained for factors represented in the list above, a one-way ANOVA can be used
+to test the means of a single dependent variable across a single independent variable with multiple groups. (e.g., fuel efficiency of different cars based on vehicle class, or
+breaking and acceleration times of different cars in competitively classed vehicles).  A two-way ANOVA can do the same thing, but for two different independent variables (e.g., 
+vehicle braking distance based on weather conditions and transmission type, again in the same vehicle class).
+
+Additionally, using one performance factor, such as 0-60 mph acceleration times, viewed against fuel economy, plotted for like drive trains and like displacement, would be a
+great way to visually compare performance of the MechaCar against its competitors, and could be easily completed in ggplot2 with the relevant data.  A linear regression could be
+performed on the same data set with the drive train and displacement being a dependent variable.
 
 
 
