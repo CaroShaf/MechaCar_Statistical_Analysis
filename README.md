@@ -36,8 +36,11 @@ and the null hypothesis is rejected such that there appears to be a random facto
 the summary statistics, the Lot 3 variance was far greater than the maximum of 100 PSI.  Lot 3 should be considered defective.
 
 Lot 1 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot1%20t-test.png
+
 Lot 2 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot2%20t-test.png
+
 Lot 3 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot3%20t-test.png
+
 
 ## Study Design: MechaCar vs Competition
 
