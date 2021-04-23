@@ -34,6 +34,7 @@ As can be seen in the three tables below, for Lot 1 and Lot 2, the p-value is 1 
 much statistically similar to the population mean of 1500 PSI.  However, Lot 3's p-value is .042 which is less than the .05 significance value and thus statistically dissimilar
 and the null hypothesis is rejected such that there appears to be a random factor contributing to the difference in Lot 3's mean to the population's mean.  As was noted above in
 the summary statistics, the Lot 3 variance was far greater than the maximum of 100 PSI.  Lot 3 should be considered defective.
+
 Lot 1 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot1%20t-test.png
 Lot 2 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot2%20t-test.png
 Lot 3 T-test https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/196c3bf532b017e2b3a6d95807df1c4e57f8a641/images/lot3%20t-test.png
