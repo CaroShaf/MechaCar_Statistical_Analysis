@@ -3,7 +3,7 @@
 ## Linear Regression to Predict MPG
   <p align="center">
   <a href="https://github.com/CaroShaf/MechaCar_Statistical_Analysis/blob/ce20b23983b91720ff674b8bcc6649ea15defe71/images/MechaCarSummaryStats.png">
-    <img src="MechaCarSummaryStats.png" alt="Summary Statistics from Linear Model of MPG Prediction of MechaCar Prototypes" width="700" height="400">
+    <img src="images/MechaCarSummaryStats.png" alt="Summary Statistics from Linear Model of MPG Prediction of MechaCar Prototypes" width="700" height="400">
   </a>
 
 From this screen shot of our RStudio/RScript analysis, we can see that our linear regression model gives the r-squared value of 0.7149, which means that roughly 72% of all MPG
